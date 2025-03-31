@@ -49,14 +49,24 @@ This Python script retrieves energy market data from the U.S. Energy Information
 # Requirements
 - Python 3.13.2
 - Required Libraries:
-  - 'pandas'
-  - 'numpy'
-  - 'requests'
-  - 'matplotlib'
-  - 'seaborn'
-  - 'plotly'
-  - 'statsmodels'
-  - 'scikit-learn'
+  - `pandas`
+  - `numpy`
+  - `requests`
+  - `matplotlib`
+  - `seaborn`
+  - `plotly`
+  - `statsmodels`
+  - `scikit-learn`
  
 # Functionality
 1. **Fetch Data**: The script connects to the EIA API and retrieves energy consumption data.
+2. **Process Data**: Converts the fetched data into a Pandas DataFrame, filters for units in trillion BTU, and converts relevant columns to appropriate data types.
+3. **Visualize Data**: Generates plots to compare historical energy values and consumption.
+4. **Forecasting**: Implements an ARIMA model to predict future energy consumption based on historical data.
+5. **Evaluate Model**: Computes RMSE to measure the accuracy of the predictions and displays the results.
+
+# Contributing
+Any contributions are welcomed! Please feel free to submit a pull request or open an issue for any improvements or bug fixes. 
+
+# License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
