@@ -61,7 +61,7 @@ model_fit = model.fit()
 forecast = model_fit.forecast(steps=len(test))
 
 # Evaluate the model performance
-rmse = np. sqrt(mean_squared_error(test, forecast))
+rmse = np.sqrt(mean_squared_error(test, forecast))
 print(f"Root Mean Squared Error: {rmse}")
 
 # Plot pred vs actual
